@@ -1,11 +1,16 @@
-import MyProvider from "./components/custom/my-provider";
-import MyApp from "./components/custom/my-app";
+import TaskProvider from "./components/context/taskProvider";
+import TaskTable from "./components/custom/table/taskTable";
+import TaskAdder from "./components/custom/task-adder/taskAdder";
+import LayOut from "./components/layout/layOut";
 
 function App() {
   return (
-    <MyProvider>
-      <MyApp />
-    </MyProvider>
+    <TaskProvider>
+      <LayOut>
+        <TaskAdder />
+        <TaskTable />
+      </LayOut>
+    </TaskProvider>
   );
 }
 
