@@ -15,7 +15,7 @@ const TaskAdder = () => {
   };
 
   return (
-    <div className="flex gap-x-8 px-64">
+    <div className="flex gap-x-8 px-64 mt-4">
       <Input
         value={newTask}
         onChange={(event) => onInputChange(event, setNewTask)}

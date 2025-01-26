@@ -7,12 +7,14 @@ const TaskTable = () => {
   const tableCaption = "A list of your tasks.";
 
   return (
-    <Table>
-      <TableCaption>{tableCaption}</TableCaption>
-      <CustomTableHeader />
-      <CustomTableBody />
-      <CustomTableFooter />
-    </Table>
+    <div className="px-16">
+      <Table>
+        <TableCaption>{tableCaption}</TableCaption>
+        <CustomTableHeader />
+        <CustomTableBody />
+        <CustomTableFooter />
+      </Table>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ const Header = () => {
 
   return (
     <div className="bg-black text-white pt-8">
-      <header>{title}</header>
+      <header className="text-3xl font-bold">{title}</header>
     </div>
   );
 };

@@ -5,9 +5,9 @@ const Footer = () => {
 
   return (
     <div className="bg-black p-8 text-white">
-      <footer>
+      <footer className="flex gap-4 justify-end">
+        {signature}
         <Avatar>
-          {signature}
           <AvatarImage
             className="h-12 w-12 rounded-full"
             src="/static/husky.png"
