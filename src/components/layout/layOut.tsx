@@ -1,8 +1,9 @@
-import { ReactNode } from "react";
 import Header from "./header";
 import Footer from "./footer";
+import { FC } from "react";
+import { ReactNodeType } from "../types/reactNodeType"
 
-const LayOut = ({ children }: { children: ReactNode }) => {
+const LayOut: FC<ReactNodeType> = ({ children }) => {
   return (
     <div>
       <Header />

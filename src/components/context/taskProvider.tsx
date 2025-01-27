@@ -1,11 +1,11 @@
 import { useState, FC } from "react";
 import { createContext } from "react";
 import { TaskContextType } from "../types/taskContext";
-import { TaskProviderType } from "../types/taskProviderType";
+import { ReactNodeType } from "../types/reactNodeType";
 
 const TaskContext = createContext<TaskContextType | null>(null);
 
-const TaskProvider: FC<TaskProviderType> = ({ children }) => {
+const TaskProvider: FC<ReactNodeType> = ({ children }) => {
   const [tasks, setTasks] = useState<string[]>([]);
 
   return (
