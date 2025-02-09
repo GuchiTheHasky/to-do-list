@@ -2,9 +2,9 @@ const Header = () => {
   const title = "To-do-list";
 
   return (
-    <div className="bg-black text-white pt-8">
-      <header className="text-3xl font-bold pl-8">{title}</header>
-    </div>
+    <header className="bg-slate-700 p-8">
+      <div className="text-3xl font-bold text-white">{title}</div>
+    </header>
   );
 };
 
